@@ -1,4 +1,4 @@
-import * as React from "react";
+import * as React from 'react';
 export interface ZebraProps {
     zebra?: boolean;
     evenRowColor?: string;
@@ -8,6 +8,6 @@ export interface TableProps extends ZebraProps {
     data?: any[];
     isNested?: boolean;
 }
-export declare class Table extends React.PureComponent<TableProps> {
+export declare class Table extends React.PureComponent<React.PropsWithChildren<TableProps>> {
     render(): JSX.Element;
 }
